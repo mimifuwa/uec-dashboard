@@ -36,6 +36,8 @@
 body{
     display: flex;
 
+    font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+
     width: 100%;
     min-height: 100vh;
 
