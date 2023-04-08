@@ -5,13 +5,29 @@
     --accent_color: #555;
     --background_color: #fff;
     --background_color_hover: #fafafa;
-    --search_input_width: 640px;
-    --search_input_height: 45px;
-    --border: 2px solid #aaa;
-    --border_hover: 2px solid #aaa;
+}
+
+@media all and (max-width: 768px) {
+    :root{
+        --search_input_width: 320px;
+        --search_input_height: 40px;
+        --border: 1px solid #aaa;
+        --border_hover: 1px solid #aaa;
+    }
+}
+
+@media all and (min-width: 769px) {
+    :root{
+        --search_input_width: 640px;
+        --search_input_height: 45px;
+        --border: 2px solid #aaa;
+        --border_hover: 2px solid #aaa;
+    }
 }
 
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     color: var(--text_color);
     user-select: none;
@@ -19,13 +35,15 @@
 
 body{
     display: flex;
-    
-    width: 100vw;
-    height: 100vh;
+
+    font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+
+    width: 100%;
+    min-height: 100vh;
 
     overflow: scroll;
 
-    padding: 32px 0;
+    padding: 2rem 0;
     margin: 0;
 }
 
@@ -40,10 +58,7 @@ h2{
     justify-content: center;
 
     width: 100%;
-    min-width: 1080px;
     height: 100%;
-    min-height: 1080px;
-
 
     background: var(--background_color);
 }
@@ -54,21 +69,19 @@ h2{
     align-items: center;
     justify-content: start;
 
-    height: 120px;
+    height: fit-content;
 
     padding: 0;
     margin: 0;
 
-    font-size: 42px;
+    font-size: 2.5rem;
     font-weight: bolder;
-
 }
 
 #title span{
-    display: flex;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: normal;
-    height: 10px;
+    height: fit-content;
 }
 
 #search{
@@ -79,12 +92,11 @@ h2{
 
     position: relative;
 
-    margin-bottom: 16px;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
 }
 
 #search #search_input{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -93,7 +105,7 @@ h2{
 
     padding: 10px calc(var(--search_input_height) / 2) 10px var(--search_input_height);
 
-    font-size: 16px;
+    font-size: 1rem;
 
     /* box-shadow: 0 0 6px #aaa; */
 
@@ -146,7 +158,7 @@ h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
     width: 64px;
     height: 64px;
 
