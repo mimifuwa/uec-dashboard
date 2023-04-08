@@ -14,14 +14,7 @@
         --border: 1px solid #aaa;
         --border_hover: 1px solid #aaa;
     }
-    
-    #title{
-        font-size: 30px;
-    }
-    
-    #title>span{
-        font-size: 12px;
-    }
+
 }
 
 @media all and (min-width: 769px) {
@@ -292,4 +285,15 @@ h2{
 
 #other_files>ul>li>a:hover{
     background-color: #fafafa;
+}
+    
+
+@media all and (max-width: 768px) {
+    #title{
+        font-size: 30px;
+    }
+    
+    #title>span{
+        font-size: 12px;
+    }
 }
