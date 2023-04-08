@@ -36,7 +36,7 @@
 body{
     display: flex;
 
-    font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+    font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3', 'Noto Sans JP', 'Roboto', sans-serif;
 
     width: 100%;
     min-height: 100vh;
