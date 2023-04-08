@@ -16,7 +16,7 @@
     }
 }
 
-@media all and (max-width: 1200px) {
+@media all and (min-width: 769px) {
     :root{
         --search_input_width: 640px;
         --search_input_height: 45px;
