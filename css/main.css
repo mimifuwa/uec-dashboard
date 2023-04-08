@@ -45,10 +45,13 @@ body{
 
     padding: 2rem 0;
     margin: 0;
+    
+    align-items: center;
 }
 
 h2{
     width: 100%;
+    margin: 16px 0;
 }
 
 #main{
@@ -72,7 +75,7 @@ h2{
     height: fit-content;
 
     padding: 0;
-    margin: 0;
+    margin: 16px 0;
 
     font-size: 2.5rem;
     font-weight: bolder;
