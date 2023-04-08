@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEC Dashboard</title>
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="/uec-dashboard/css/main.css">
+    <link rel="stylesheet" href="/uec-dashboard/css/bootstrap_icons/bootstrap-icons.css">
+
+    <link rel="icon" type="image/png" href="/uec-dashboard/favicon.png">
+</head>
+<body>
+    <div id="main">
+        <h1 id="title">
+            UEC Dashboard
+            <span>The University of Electro-Communications</span>
+        </h1>
+        <form action="https://www.uec.ac.jp/search/" method="get" id="search" target="_blank" rel="noopener noreferre" onsubmit="return clearForm();">
+            <input type="text" name="q" id="search_input" placeholder="Search with UEC Homepage..." autocomplete="off" autofocus>
+            <i id="search_icon" class="bi bi-search"></i>
+        </form>
+        <div id="app_list">
+            <h2>Apps</h2>
+            <a href="https://www.uec.ac.jp/" class="app" target="_blank" rel="noopener noreferre">
+                <i class="bi bi-house"></i>
+                <span>UEC Top</span>
+            </a>
+            <a href="https://portalweb.uec.ac.jp/Portal/u001/index.php" class="app" target="_blank" rel="noopener noreferre">
+                <i class="bi bi-info-circle"></i>
+                <span>UEC Portal</span>
+            </a>
+            <a href="https://campusweb.office.uec.ac.jp/campusweb/" class="app" target="_blank" rel="noopener noreferre">
+                <i class="bi bi-info-circle"></i>
+                <span>Square</span>
+            </a>
+            <a href="https://classroom.google.com/" class="app" target="_blank" rel="noopener noreferre">
+                <i class="bi bi-journal-bookmark"></i>
+                <span>Classroom</span>
+            </a>
+            <a href="http://www.cdel.uec.ac.jp/" class="app" target="_blank" rel="noopener noreferre">
+                <i class="bi bi-journal-bookmark"></i>
+                <span>e-Learning</span>
+            </a>
+            <a href="https://webclass.cdel.uec.ac.jp/webclass/" class="app" target="_blank" rel="noopener noreferre">
+                <i class="bi bi-journal-bookmark"></i>
+                <span>WebClass</span>
+            </a>
+            <a href="https://lms.edu.uec.ac.jp/?redirect=0" class="app" target="_blank" rel="noopener noreferre">
+                <i class="bi bi-journal-bookmark"></i>
+                <span>LMS</span>
+            </a>
+            <a href="https://uec.atuniv.jp/user" class="app" target="_blank" rel="noopener noreferre">
+                <i class="bi bi-journal-bookmark"></i>
+                <span>Atuniv</span>
+            </a>
+            <a href="http://www.sport.edu.uec.ac.jp/info/" class="app" target="_blank" rel="noopener noreferre">
+                <i class="bi bi-journal-bookmark"></i>
+                <span>Sports</span>
+            </a>
+            <a href="https://www.lib.uec.ac.jp/" class="app" target="_blank" rel="noopener noreferre">
+                <i class="bi bi-book"></i>
+                <span>Library</span>
+            </a>
+            <a href="http://www.health.uec.ac.jp/index.html" class="app" target="_blank" rel="noopener noreferre">
+                <i class="bi bi-heart-pulse"></i>
+                <span>Health</span>
+            </a>
+            <a href="https://workspace.google.com/u/2/dashboard" class="app" target="_blank" rel="noopener noreferre">
+                <i class="bi bi-person-circle"></i>
+                <span>Account</span>
+            </a>
+            <a href="https://mail.google.com/mail/u/2/?zx=x5682xw9yrs6#inbox?compose=new" class="app" target="_blank" rel="noopener noreferre">
+                <i class="bi bi-envelope"></i>
+                <span>Gmail</span>
+            </a>
+            <a href="https://calendar.google.com/calendar/u/2/r/week" class="app" target="_blank" rel="noopener noreferre">
+                <i class="bi bi-calendar-check"></i>
+                <span>Calender</span>
+            </a>
+            
+            
+            <a href="https://clevas.cdel.uec.ac.jp/clevas/" class="app" target="_blank" rel="noopener noreferre">
+                <i class="bi bi-file-earmark-play"></i>
+                <span>CLEVAS</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1Wi8PWr1Dnn0ulbXn_tReo35vk_Hdb9vU/view" class="app" target="_blank" rel="noopener noreferre">
+                <i class="bi bi-question-circle"></i>
+                <span>Help</span>
+            </a>
+        </div>
+        <div id="other_files">
+            <h2>Files</h2>
+            <ul>
+                <li>
+                    <a href="https://uecdisk2.cc.uec.ac.jp/s/7My7gQgqFzCDQkJ">
+                        <i class="bi bi-file-earmark"></i>
+                        UECポータル 操作マニュアル
+                    </a>
+                </li>
+                <li>
+                    <a href="http://kyoumu.office.uec.ac.jp/portal/guideline_student.pdf">
+                        <i class="bi bi-file-earmark"></i>
+                        UECポータル ガイドライン
+                    </a>
+                </li>
+                <li>
+                    <a href="http://kyoumu.office.uec.ac.jp/portal/guideline_student.pdf">
+                        <i class="bi bi-question-circle"></i>
+                        UECポータル FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.uec.ac.jp/campus/academic/calendar/pdf/2023/gakuiki.pdf">
+                        <i class="bi bi-calendar"></i>
+                        学事日程
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.uec.ac.jp/campus/academic/calendar/pdf/2023/youbi-gakuiki.pdf">
+                        <i class="bi bi-calendar"></i>
+                        曜日別授業日数
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.uec.ac.jp/campus/academic/calendar/pdf/2023/kyuugyou.pdf">
+                        <i class="bi bi-calendar"></i>
+                        大学行事・学生関係行事に伴う休業・休講
+                    </a>
+                </li>
+                <li>
+                    <a href="http://kyoumu.office.uec.ac.jp/timet/">
+                        <i class="bi bi-calendar"></i>
+                        時間割
+                    </a>
+                </li>
+                <li>
+                    <a href="http://kyoumu.office.uec.ac.jp/gakubu/timetable/2023class.pdf">
+                        <i class="bi bi-file-earmark"></i>
+                        クラス分け
+                    </a>
+                </li>
+                <li>
+                    <a href="http://kyoumu.office.uec.ac.jp/gakubu/timetable/2023English_1.pdf">
+                        <i class="bi bi-file-earmark"></i>
+                        英語 クラス分け
+                    </a>
+                </li>
+                <li>
+                    <a href="http://kyoumu.office.uec.ac.jp/gakubu/ori/R5qa.pdf">
+                        <i class="bi bi-file-earmark"></i>
+                        履修について
+                    </a>
+                </li>
+                <li>
+                    <a href="http://kyoumu.office.uec.ac.jp/gakubu/ori/R5guidence.pdf">
+                        <i class="bi bi-file-earmark"></i>
+                        ガイダンス・学力テスト 日程
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.cdel.uec.ac.jp/manuals/CLEVAS-WebClass.pdf">
+                    <i class="bi bi-info-circle"></i>
+                    CLEVAS 連携方法
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.cc.uec.ac.jp/srv/">
+                    <i class="bi bi-info-circle"></i>
+                    UEC 情報基盤センター
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
