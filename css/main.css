@@ -14,6 +14,14 @@
         --border: 1px solid #aaa;
         --border_hover: 1px solid #aaa;
     }
+    
+    #title{
+        font-size: 30px;
+    }
+    
+    #title>span{
+        font-size: 12px;
+    }
 }
 
 @media all and (min-width: 769px) {
