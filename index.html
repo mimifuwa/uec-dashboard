@@ -215,6 +215,26 @@
             </ul>
         </div>
     </div>
+    
+    <button id="theme" onclick="themeChange();">
+
+    </button>
+
+    <script>
+            let themeChangeBtn = document.getElementById('theme');
+
+            let icon;
+            let themeFlag = localStorage.getItem('theme');
+
+            if(themeFlag === null || themeFlag === 'light'){
+                icon = '<i class="bi bi-moon"></i>';
+            }else{
+                icon = '<i class="bi bi-brightness-high"></i>';
+            }
+
+            themeChangeBtn.innerHTML = icon;
+
+    </script>
 
     <script src="script/script.js"></script>
 </body>
