@@ -186,7 +186,7 @@ h2{
 
 #app_list .app:hover{
     /* border: var(--border_hover); */
-    background-color: #f3f3f3;
+    background-color: var(--background_color_hover);
 
     /* transform: scale(1.05); */
 }
@@ -275,7 +275,7 @@ h2{
 
     padding: 8px;
 
-    border-top: #ddd solid 1px;
+    border-top: var(--border);
 
     font-size: 12px;
 
