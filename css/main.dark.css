@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 :root{
-    --text_color: red;
-    --accent_color: #555;
-    --background_color: #fff;
-    --background_color_hover: #fafafa;
+    --text_color: #ddd;
+    --accent_color: #aaa;
+    --background_color: #333;
+    --background_color_hover: #353535;
 }
 
 @media all and (max-width: 768px) {
