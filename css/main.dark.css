@@ -8,7 +8,7 @@
 }
 
 html{
-    background-color: var(--backgorund_color);
+    background-color: var(--background_color);
 }
 
 @media all and (max-width: 768px) {
