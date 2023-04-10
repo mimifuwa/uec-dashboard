@@ -7,6 +7,10 @@
     --background_color_hover: #353535;
 }
 
+html{
+    background-color: var(--backgorund_color);
+}
+
 @media all and (max-width: 768px) {
     :root{
         --search_input_width: 320px;
