@@ -7,10 +7,6 @@
     --background_color_hover: #353535;
 }
 
-html{
-    background-color: var(--background_color);
-}
-
 @media all and (max-width: 768px) {
     :root{
         --search_input_width: 320px;
@@ -28,6 +24,10 @@ html{
         --border: 2px solid #555;
         --border_hover: 2px solid #555;
     }
+}
+
+html{
+    background-color: var(--background_color);
 }
 
 *{
@@ -115,8 +115,6 @@ h2{
 
     font-size: 1rem;
 
-    /* box-shadow: 0 0 6px #aaa; */
-
     background-color: transparent;
     border: var(--border);
     border-radius: calc(var(--search_input_height) / 2);
@@ -175,20 +173,13 @@ h2{
 
     text-decoration: none;
 
-    /* box-shadow: 0 0 6px #111; */
-
-    /* background-color: var(--text_color); */
-    /* border: var(--border); */
     border-radius: 5px;
 
     transition: background-color .3s ease-in-out;
 }
 
 #app_list .app:hover{
-    /* border: var(--border_hover); */
     background-color: var(--background_color_hover);
-
-    /* transform: scale(1.05); */
 }
 
 #app_list .app i{
@@ -203,7 +194,6 @@ h2{
     padding-top: 4px;
 
     font-size: 26px;
-    /* color: var(--background_color); */
 }
 
 #app_list .app span{
@@ -217,7 +207,6 @@ h2{
 
     font-size: 9px;
     font-weight: bold;
-    /* color: var(--background_color); */
 }
 
 #other_files{
@@ -245,7 +234,7 @@ h2{
     width: 100%;
     overflow-y: scroll;
 
-    border: #ddd solid 1px;
+    border: var(--border);
     border-top: none;
     border-radius: 8px;
 
@@ -288,7 +277,7 @@ h2{
 }
 
 #other_files>ul>li>a:hover{
-    background-color: #353535;
+    background-color: var(--background_color_hover);
 }
     
 
