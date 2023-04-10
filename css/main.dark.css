@@ -15,8 +15,8 @@ html{
     :root{
         --search_input_width: 320px;
         --search_input_height: 40px;
-        --border: 1px solid #aaa;
-        --border_hover: 1px solid #aaa;
+        --border: 1px solid #555;
+        --border_hover: 1px solid #555;
     }
 
 }
@@ -25,8 +25,8 @@ html{
     :root{
         --search_input_width: 640px;
         --search_input_height: 45px;
-        --border: 2px solid #aaa;
-        --border_hover: 2px solid #aaa;
+        --border: 2px solid #555;
+        --border_hover: 2px solid #555;
     }
 }
 
@@ -288,7 +288,7 @@ h2{
 }
 
 #other_files>ul>li>a:hover{
-    background-color: #fafafa;
+    background-color: #353535;
 }
     
 
