@@ -7,7 +7,22 @@
     <title>UEC Dashboard</title>
 
     <!-- style sheet -->
-    <link rel="stylesheet" href="css/main.css">
+    <link id="colorTheme" rel="stylesheet" href="css/main.light.css">
+
+    <script>
+        let colorTheme = document.getElementById('colorTheme');
+
+        let theme;
+        let themeFlag = localStorage.getItem('theme');
+
+        if(themeFlag === null || themeFlag === 'light'){
+            theme = 'light';
+        }else{
+            theme = 'dark';
+        }
+
+        colorTheme.href = `css/main.${theme}.css`;
+    </script>
     <link rel="stylesheet" href="css/bootstrap_icons/bootstrap-icons.css">
 
     <link rel="icon" type="image/png" href="favicon.png">
