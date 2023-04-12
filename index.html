@@ -16,6 +16,7 @@
 
         if(theme !== 'dark' && theme !== 'light'){
             localStorage.setItem('theme', 'light');
+            theme = 'light';
         }
 
         colorTheme.href = `css/color.${theme}.css`;
