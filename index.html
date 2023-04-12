@@ -12,7 +12,7 @@
     <script>
         let colorTheme = document.getElementById('colorTheme');
 
-        let theme = localStorage.getItem('theme');
+        let theme = localStorage.getItem('theme') ?? 'light';
 
         colorTheme.href = `css/color.${theme}.css`;
 
@@ -116,7 +116,7 @@
         <div id="other_files">
             <h2>Files</h2>
             <ul>
-                
+
                 <li>
                     <a href="https://sites.google.com/gl.cc.uec.ac.jp/r5-orientation/%E6%83%85%E5%A0%B1%E7%90%86%E5%B7%A5%E5%AD%A6%E5%9F%9F%E6%96%B0%E5%85%A5%E7%94%9F?authuser=1">
                         <i class="bi bi-file-earmark"></i>
@@ -203,14 +203,14 @@
                 </li>
                 <li>
                     <a href="http://www.cdel.uec.ac.jp/manuals/CLEVAS-WebClass.pdf">
-                    <i class="bi bi-info-circle"></i>
-                    CLEVAS 連携方法
+                        <i class="bi bi-info-circle"></i>
+                        CLEVAS 連携方法
                     </a>
                 </li>
                 <li>
                     <a href="https://www.cc.uec.ac.jp/srv/">
-                    <i class="bi bi-info-circle"></i>
-                    UEC 情報基盤センター
+                        <i class="bi bi-info-circle"></i>
+                        UEC 情報基盤センター
                     </a>
                 </li>
             </ul>
@@ -222,13 +222,13 @@
     </div>
 
     <script>
-        if(theme === 'dark'){
-        document.getElementById('themeBtn').innerHTML = '<i class="bi bi-brightness-high"></i>';
-        }else{
-        document.getElementById('themeBtn').innerHTML = '<i class="bi bi-moon"></i>';
+        if (theme === 'dark') {
+            document.getElementById('themeBtn').innerHTML = '<i class="bi bi-brightness-high"></i>';
+        } else {
+            document.getElementById('themeBtn').innerHTML = '<i class="bi bi-moon"></i>';
         }
     </script>
-    
+
     <script src="script/script.js"></script>
 </body>
 </html>
