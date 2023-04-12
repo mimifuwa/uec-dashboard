@@ -17,6 +17,14 @@
         if(theme !== 'dark' && theme !== 'light'){
             localStorage.setItem('theme', 'light');
             theme = 'light';
+
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                localStorage.setItem('theme', 'dark');
+                theme = 'dark';
+            } else {
+                localStorage.setItem('theme', 'light');
+                theme = 'light';
+            }
         }
 
         colorTheme.href = `css/color.${theme}.css`;
