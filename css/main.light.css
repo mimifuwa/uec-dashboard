@@ -214,6 +214,8 @@ h2{
     font-size: 9px;
     font-weight: bold;
     /* color: var(--background_color); */
+
+    white-space: nowrap;
 }
 
 #other_files{
