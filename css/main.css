@@ -1,18 +1,9 @@
 @charset "UTF-8";
 
-:root{
-    --text_color: #ddd;
-    --accent_color: #aaa;
-    --background_color: #333;
-    --background_color_hover: #353535;
-}
-
 @media all and (max-width: 768px) {
     :root{
         --search_input_width: 320px;
         --search_input_height: 40px;
-        --border: 1px solid #555;
-        --border_hover: 1px solid #555;
     }
 
 }
@@ -21,8 +12,6 @@
     :root{
         --search_input_width: 640px;
         --search_input_height: 45px;
-        --border: 2px solid #555;
-        --border_hover: 2px solid #555;
     }
 }
 
@@ -282,21 +271,26 @@ h2{
     background-color: var(--background_color_hover);
 }
 
-#themeChangeBtn{
+#themeBtn{
     display: flex;
     align-items: center;
-    justfy-content: center;
+    justify-content: center;
     border: none;
     background-color: transparent;
-    height: 32px;
-    width: 32px;
+
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+
+    cursor: pointer;
 }
     
-#themeChangeBtn>i{
+#themeBtn>i{
     display:flex; 
     align-items: center;
-    justfy-content: center;
-    font-size: 24px;
+    justify-content: center;
+    padding: 8px;
+    font-size: 20px;
     color: var(--accent_color);
 }
 

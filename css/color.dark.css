@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@import url("main.css");
+
+:root{
+    --text_color: #ddd;
+    --accent_color: #aaa;
+    --background_color: #333;
+    --background_color_hover: #353535;
+
+    --border: 1px solid #555;
+    --border_hover: 1px solid #555;
+}
