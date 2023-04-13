@@ -1,11 +1,15 @@
 @charset "UTF-8";
 
+:root{
+    --border: 1.5px solid var(--border_color);
+    --border_hover: 1.5px solid var(--border_color);
+}
+
 @media all and (max-width: 768px) {
     :root{
         --search_input_width: 320px;
         --search_input_height: 40px;
     }
-
 }
 
 @media all and (min-width: 769px) {
