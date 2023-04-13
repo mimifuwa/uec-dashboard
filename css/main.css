@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 :root{
-    --border: 1.5px solid var(--border_color);
-    --border_hover: 1.5px solid var(--border_color);
+    --border: 1px solid var(--border_color);
+    --border_hover: 1px solid var(--border_color);
 }
 
 @media all and (max-width: 768px) {
@@ -213,8 +213,6 @@ h2{
     width: var(--search_input_width);
 
     padding: 16px 0;
-
-
 }
 
 #other_files>ul{
@@ -257,7 +255,7 @@ h2{
 
     text-decoration: none;
 
-    padding: 8px;
+    padding: 12px 8px;
 
     border-top: var(--border);
 
@@ -286,6 +284,13 @@ h2{
     bottom: 24px;
     right: 24px;
 
+    background-color: var(--background_color);
+
+    box-shadow: 0 0 6px var(--background_color_hover);
+
+    border: var(--border);
+    border-radius: 5px;
+
     cursor: pointer;
 }
     
@@ -293,7 +298,7 @@ h2{
     display:flex; 
     align-items: center;
     justify-content: center;
-    padding: 8px;
+    padding: 10px;
     font-size: 20px;
     color: var(--accent_color);
 }
@@ -307,11 +312,13 @@ h2{
     background-color: transparent;
 
     position: fixed;
-    bottom: 64px;
+    bottom: 74px;
     right: 24px;
 
     border: var(--border);
     border-radius: 5px;
+
+    box-shadow: 0 0 6px var(--background_color_hover);
 
     cursor: pointer;
 }
@@ -347,7 +354,7 @@ h2{
 }
 
 #themeChange>div>span{
-    font-size: 14px;
+    font-size: 13px;
 }
 
 @media all and (max-width: 768px) {
@@ -359,8 +366,17 @@ h2{
         font-size: 12px;
     }
 
-    #themeBtn{
+    #openBtn, #closeBtn{
         bottom: 8px;
         right: 8px;
+    }
+
+    #settings{
+        bottom: 58px;
+        right: 8px;
+    }
+
+    #search #search_input{
+        font-size: 14px;
     }
 }
