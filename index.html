@@ -14,10 +14,14 @@
 
         let theme = localStorage.getItem('theme');
 
-        if(theme !== 'dark' && theme !== 'light'){
+        // if no data
+        if(theme !== 'system' && theme !== 'light' && theme !== 'dark'){
             localStorage.setItem('theme', 'light');
             theme = 'light';
+        }
 
+        // theme is system
+        if(theme === 'system'){
             if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
                 localStorage.setItem('theme', 'dark');
                 theme = 'dark';
@@ -27,6 +31,7 @@
             }
         }
 
+        // load css file
         colorTheme.href = `css/color.${theme}.css`;
 
     </script>
@@ -230,17 +235,29 @@
         </div>
     </div>
 
-    <div id="themeBtn" onclick="changeTheme();" role="button">
-        <i class="bi bi-moon"></i>
+    <div id="openBtn" onclick="openSettings();" role="button" style="display:flex;">
+        <i class="bi bi-gear"></i>
+    </div>
+    <div id="closeBtn" onclick="closeSettings();" role="button" style="display:none;">
+        <i class="bi bi-x"></i>
     </div>
 
-    <script>
-        if(theme === 'dark'){
-        document.getElementById('themeBtn').innerHTML = '<i class="bi bi-brightness-high"></i>';
-        }else{
-        document.getElementById('themeBtn').innerHTML = '<i class="bi bi-moon"></i>';
-        }
-    </script>
+    <div id="settings" style="display: none;">
+        <div id="themeChange">
+            <div id="system" onclick="changeColor('system');">
+                <i class="bi bi-gear"></i>
+                <span>System</span>
+            </div>
+            <div id="light" onclick="changeColor('light');">
+                <i class="bi bi-brightness-high"></i>
+                <span>Light</span>
+            </div>
+            <div id="dark" onclick="changeColor('dark');;">
+                <i class="bi bi-moon"></i>
+                <span>Dark</span>
+            </div>
+        </div>
+    </div>
     
     <script src="script/script.js"></script>
 </body>

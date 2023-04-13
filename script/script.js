@@ -8,17 +8,25 @@ function clearForm(){
   return false;
 }
 
-function changeTheme(){
-  let btn = document.getElementById('themeBtn');
-  let theme = localStorage.getItem('theme');
+function changeColor(str){
+    localStorage.setItem('theme', str);
+    location.reload();
+}
 
-  if(theme === 'dark'){
-    localStorage.setItem('theme', 'light');
-    btn.innerHTML = '<i class="bi bi-brightness-high"></i>';
-  }else{
-    localStorage.setItem('theme', 'dark');
-    btn.innerHTML = '<i class="bi bi-moon"></i>';
-  }
+function openSettings(){
+  let settings = document.getElementById('settings');
+  let openBtn = document.getElementById('openBtn');
+  let closeBtn = document.getElementById('closeBtn');
+  settings.style.display = 'flex';
+  closeBtn.style.display = 'flex';
+  openBtn.style.display = 'none';
+}
 
-  location.reload();
+function closeSettings(){
+  let settings = document.getElementById('settings');
+  let openBtn = document.getElementById('openBtn');
+  let closeBtn = document.getElementById('closeBtn');
+  settings.style.display = 'none';
+  closeBtn.style.display = 'none';
+  openBtn.style.display = 'flex';
 }

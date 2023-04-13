@@ -271,7 +271,7 @@ h2{
     background-color: var(--background_color_hover);
 }
 
-#themeBtn{
+#openBtn, #closeBtn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -285,13 +285,65 @@ h2{
     cursor: pointer;
 }
     
-#themeBtn>i{
+#openBtn>i, #closeBtn>i{
     display:flex; 
     align-items: center;
     justify-content: center;
     padding: 8px;
     font-size: 20px;
     color: var(--accent_color);
+}
+
+#settings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+
+    position: fixed;
+    bottom: 64px;
+    right: 24px;
+
+    border: var(--border);
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+#themeChange{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#themeChange>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    width: 100%;
+    padding: 5px 10px;
+
+    transition: background-color .3s ease-in-out;
+
+    background-color: var(--background_color);
+}
+
+#themeChange>div:hover{
+    background-color: var(--background_color_hover);
+}
+
+#themeChange>div>i{
+    font-size: 16px;
+    padding-right: 8px;
+}
+
+#themeChange>div>span{
+    font-size: 14px;
 }
 
 @media all and (max-width: 768px) {
