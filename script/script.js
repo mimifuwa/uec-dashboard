@@ -1,6 +1,6 @@
 let num = localStorage.getItem('barcode');
 if(num === 'nodata' || num === null){
-  document.getElementById('error').innerHTML = '学生証情報が登録されていません。<br>新規登録から登録してください。';
+  document.getElementById('error').innerHTML = '学生証情報が登録されていません。<br>設定アイコンの新規登録から登録してください。';
   document.getElementById('error').style.display = 'flex';
   document.getElementById('barcode').style.display = 'none';
 }else{
