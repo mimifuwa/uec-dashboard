@@ -15,7 +15,7 @@
     }
 
     .mobile{
-        display: flex;
+        display: flex !important;
     }
 }
 
@@ -26,7 +26,7 @@
     }
 
     .mobile{
-        display: none;
+        display: none !important;
     }
 }
 
