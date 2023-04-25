@@ -13,12 +13,20 @@
         --search_input_width: 320px;
         --search_input_height: 40px;
     }
+
+    .mobile{
+        display: flex;
+    }
 }
 
 @media all and (min-width: 769px) {
     :root{
         --search_input_width: 640px;
         --search_input_height: 45px;
+    }
+
+    .mobile{
+        display: none;
     }
 }
 

@@ -55,7 +55,7 @@
             <input type="text" name="q" id="search_input" placeholder="Search with UEC Homepage..." autocomplete="off" autofocus>
             <i id="search_icon" class="bi bi-search"></i>
         </form>
-        <a class="btn" role="button" onclick="openCard();">
+        <a class="btn mobile" role="button" onclick="openCard();">
             学生証を表示
         </a>
         <div id="app_list">
@@ -255,12 +255,12 @@
 
     <div id="settings" style="display: none;">
         <div id="settings_list">
-            <h3>学生証の設定</h3>
-            <div id="system" onclick="openCardInfoInput();">
+            <h3 class="mobile">学生証の設定</h3>
+            <div class="mobile" id="system" onclick="openCardInfoInput();">
                 <i class="bi bi-pencil-square"></i>
                 <span>新規登録</span>
             </div>
-            <div id="system" onclick="deleteCardInfo();">
+            <div class="mobile" id="system" onclick="deleteCardInfo();">
                 <i class="bi bi-trash3"></i>
                 <span>登録削除</span>
             </div>
