@@ -1,5 +1,5 @@
 {
-    "short_name": "PWA",
+    "short_name": "UEC Dashboard",
     "name": "UEC Dashboard",
     "display": "standalone",
     "start_url": "index.html",
