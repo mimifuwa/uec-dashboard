@@ -1,0 +1,13 @@
+{
+    "short_name": "PWA",
+    "name": "UEC Dashboard",
+    "display": "standalone",
+    "start_url": "index.html",
+    "icons": [
+        {
+            "src": "favicon.png",
+            "sizes": "500x500",
+            "type": "image/jpg"
+        }
+    ]
+}
