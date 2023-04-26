@@ -7,7 +7,7 @@
         {
             "src": "favicon.png",
             "sizes": "500x500",
-            "type": "image/jpg"
+            "type": "image/png"
         }
     ]
 }
