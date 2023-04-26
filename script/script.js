@@ -49,7 +49,8 @@ function closeSettings(){
 }
 
 function openCard(){
-  document.body.requestFullscreen();
+  let requestFullScreen = document.body.requestFullscreen || document.body.webkitRequestFullscreen;
+  requestFullScreen();
   document.getElementById('card').style.display = 'flex';
 }
 
