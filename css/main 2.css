@@ -1,0 +1,382 @@
+@charset "UTF-8";
+
+:root{
+    --border: 1px solid var(--border_color);
+    --border_hover: 1px solid var(--border_color);
+}
+
+@media all and (max-width: 768px) {
+    :root{
+        --search_input_width: 320px;
+        --search_input_height: 40px;
+    }
+}
+
+@media all and (min-width: 769px) {
+    :root{
+        --search_input_width: 640px;
+        --search_input_height: 45px;
+    }
+}
+
+html{
+    background-color: var(--background_color);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text_color);
+    user-select: none;
+}
+
+body{
+    display: flex;
+
+    font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3', 'Noto Sans JP', 'Roboto', sans-serif;
+
+    width: 100%;
+    min-height: 100vh;
+
+    overflow: scroll;
+
+    padding: 2rem 0;
+    margin: 0;
+    
+    align-items: center;
+}
+
+h2{
+    width: 100%;
+    margin: 16px 0;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    background: var(--background_color);
+}
+
+#title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    height: fit-content;
+
+    padding: 0;
+    margin: 16px 0;
+
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+#title span{
+    font-size: 1rem;
+    font-weight: normal;
+    height: fit-content;
+}
+
+#search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
+#search #search_input{
+    justify-content: center;
+    align-items: center;
+
+    width: var(--search_input_width);
+    height: var(--search_input_height);
+
+    padding: 10px calc(var(--search_input_height) / 2) 10px var(--search_input_height);
+
+    font-size: 1rem;
+
+    background-color: transparent;
+    border: var(--border);
+    border-radius: calc(var(--search_input_height) / 2);
+
+    transition: border .3s ease-in-out;
+
+}
+
+#search #search_input:focus-visible{
+    outline: none;
+
+    border: var(--border_hover);
+}
+
+#search #search_icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    width: calc(var(--search_input_height) - 10px);
+    height: calc(var(--search_input_height) - 10px);
+
+    left: 10px;
+
+    transition: color .3s ease-in-out;
+
+}
+
+#search #search_input:focus-visible+#search_icon{
+    color: var(--accent_color);
+}
+
+#app_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+
+    width: var(--search_input_width);
+}
+
+#app_list .app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 64px;
+    height: 64px;
+
+    margin: 0 8px 36px;
+    padding: 5px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    transition: background-color .3s ease-in-out;
+}
+
+#app_list .app:hover{
+    background-color: var(--background_color_hover);
+}
+
+#app_list .app i{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 44px;
+
+    padding-top: 4px;
+
+    font-size: 26px;
+}
+
+#app_list .app span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 20px;
+
+    font-size: 9px;
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+#other_files{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    width: var(--search_input_width);
+
+    padding: 16px 0;
+}
+
+#other_files>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    overflow-y: scroll;
+
+    border: var(--border);
+    border-top: none;
+    border-radius: 8px;
+
+}
+
+#other_files>ul>li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    width: 100%;
+
+
+    list-style: none;
+}
+
+#other_files>ul>li>a{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    width: 100%;
+
+    text-decoration: none;
+
+    padding: 12px 8px;
+
+    border-top: var(--border);
+
+    font-size: 12px;
+
+    transition: background-color .3s ease-in-out;
+}
+
+#other_files>ul>li>a>i{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+#other_files>ul>li>a:hover{
+    background-color: var(--background_color_hover);
+}
+
+#openBtn, #closeBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+
+    background-color: var(--background_color);
+
+    box-shadow: 0 0 6px var(--background_color_hover);
+
+    border: var(--border);
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+    
+#openBtn>i, #closeBtn>i{
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    color: var(--accent_color);
+}
+
+#settings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+
+    position: fixed;
+    bottom: 74px;
+    right: 24px;
+
+    border: var(--border);
+    border-radius: 5px;
+
+    box-shadow: 0 0 6px var(--background_color_hover);
+
+    cursor: pointer;
+}
+
+#themeChange{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#themeChange>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    width: 100%;
+    padding: 5px 10px;
+
+    transition: background-color .3s ease-in-out;
+
+    background-color: var(--background_color);
+}
+
+#themeChange>div:hover{
+    background-color: var(--background_color_hover);
+}
+
+#themeChange>div>i{
+    font-size: 16px;
+    padding-right: 8px;
+}
+
+#themeChange>div>span{
+    font-size: 13px;
+}
+
+@media all and (max-width: 768px) {
+    #title{
+        font-size: 30px;
+    }
+    
+    #title>span{
+        font-size: 12px;
+    }
+
+    #openBtn, #closeBtn{
+        bottom: 8px;
+        right: 8px;
+    }
+
+    #settings{
+        bottom: 58px;
+        right: 8px;
+    }
+
+    #search #search_input{
+        font-size: 14px;
+    }
+}
