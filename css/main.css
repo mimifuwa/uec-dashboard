@@ -78,6 +78,8 @@ a.btn{
     
     border-radius: 23px;
 
+    color: #fff;
+
     background-color: var(--btn_color);
 
     cursor: pointer;
