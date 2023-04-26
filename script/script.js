@@ -49,13 +49,13 @@ function closeSettings(){
 }
 
 function openCard(){
-  document.body.requestFullscreen();
   document.getElementById('card').style.display = 'flex';
+  document.getElementById('body').style.overflowY = 'hidden';
 }
 
 function closeCard(){
-  document.exitFullscreen();
   document.getElementById('card').style.display = 'none';
+  document.getElementById('body').style.overflowY = 'auto';
 }
 
 function openCardInfoInput(){

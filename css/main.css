@@ -445,7 +445,7 @@ a.btn{
 
     border-radius: 5px;
 
-    border: var(--border);
+    border: 1px solid #f3f3f3;
 }
 
 #card img{
